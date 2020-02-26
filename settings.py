@@ -1,9 +1,8 @@
 FLASK_APP ='app.py'
 FLASK_ENV ='development'
 
-#UPLOAD_DIR = "UPLOAD THE PATH TO YOUR DIRECTORY HERE\imgs"
+UPLOAD_DIR = "UPLOAD THE PATH TO YOUR DIRECTORY HERE\imgs"
 
-UPLOAD_DIR = "C:\\Users\\abbie\\opt\\Store\\static\\imgs"
 
 SECRET_KEY = 'nXr2Z5lidpy-PeVFqy33zwKxEORmxlJMlkItGE-Uihkjoejosnq7Qs2vdWXaXcxfuKwfQ'
 
