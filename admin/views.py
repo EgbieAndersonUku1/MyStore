@@ -64,7 +64,7 @@ def add():
 def admin(page_number=1):
 
     products = Product.query.filter(Product.live==True).paginate(per_page=_PER_PAGE, page=page_number, error_out=False)
-    available_stocks = Product.query.filter(Product.stock > 0).count()
+    available_stocks = Product.query.filter(Product.stock > 0, Product.live==True).count()
     pending_orders = User.query.filter(User.payment_status == "PENDING").count()
     completed_orders = User.query.filter(User.payment_status =="Complete").count()
     out_of_stock = abs(products.total - available_stocks)
